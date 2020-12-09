@@ -2,7 +2,7 @@
 
     <div class="col text-center" *ngFor="let cancion of nuevascanciones">
         <div class="card h-100">
-            <img [src]="cancion.images[1].url" class="card-img-top" alt="..." />
+            <img [src]="cancion.images | noimage" class="card-img-top" alt="..." />
             <div class="card-body">
                 <h5 class="card-title"> {{ cancion.name }} </h5>
                 <p class="card-text">
