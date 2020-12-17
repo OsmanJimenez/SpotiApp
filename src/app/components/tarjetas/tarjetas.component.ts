@@ -16,7 +16,7 @@ export class TarjetasComponent {
 
   verArtista( item: any){
     
-    let artistaId = item.artists[0].id;
+    let artistaId = item.id;
 
     if ( item.type === 'artist' ){
       artistaId = item.id;
